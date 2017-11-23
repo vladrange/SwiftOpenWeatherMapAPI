@@ -106,7 +106,7 @@ extension WAPIManager {
 
 enum Router: URLRequestConvertible {
     func asURLRequest() throws -> URLRequest {
-        fatalError()
+        return URLRequest!.request!
     }
 
     static let baseURLString = "http://api.openweathermap.org/data/"
